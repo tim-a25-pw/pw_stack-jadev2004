@@ -4,44 +4,41 @@
 
 <section class="hero">
     <div class="wrapper">
-
         <div class="hero__media">
-           <img src="assets/images/bg-hero.jpg" alt="Skieur étoile" /> 
+            <img src="assets/images/bg-hero.jpg" alt="Skieur étoile" />
         </div>
 
         <div class="hero__content">
             <h1>
-                La <span class="texte__bold">crème</span>
-            <br />
+                La
+                <span class="texte__bold">crème</span>
+                <br />
                 de la crème
             </h1>
 
             <p>
-                Votre rêve de p’tit cul est sur le point de se réaliser. Vous avez toujours rêvé de performer autant sur les internets que sur une surface glacée.
-                Saississez votre chance dès aujourd’hui et joignez l’équipe de timCanada afin de vous dépasser dans un environement sécurisé et serein.
+                Votre rêve de p’tit cul est sur le point de se réaliser. Vous avez toujours rêvé de performer autant sur les internets que sur une surface
+                glacée. Saississez votre chance dès aujourd’hui et joignez l’équipe de timCanada afin de vous dépasser dans un environement sécurisé et serein.
             </p>
-            
+
             <a href="#" class="button">Joignez notre équipe</a>
         </div>
     </div>
 </section>
 
-
 <!-- Athlètes -->
 
 <section class="athletes">
     <div class="wrapper">
-
         <div class="athletes_content">
             <h2>Nos athlètes</h2>
             <p>
-                Nos athlètes sont sélectionnés parmi les meilleurs de leur génération. Sans aucun ajout d’hormones de croissances (à l’exception des Doritos), ils perfoment
-                toujours à leur maximum.
+                Nos athlètes sont sélectionnés parmi les meilleurs de leur génération. Sans aucun ajout d’hormones de croissances (à l’exception des Doritos),
+                ils perfoment toujours à leur maximum.
             </p>
         </div>
 
         <div class="cards">
-
             <div class="card__sport">
                 <div class="card__sport__media">
                     <img src="assets/images/matt-pratt.jpg" alt="" />
@@ -77,7 +74,7 @@
             </div>
 
             <div class="card__sport">
-                <div class="card__sport__media"> 
+                <div class="card__sport__media">
                     <img src="assets/images/jeff-white.jpg" alt="" />
                 </div>
 
@@ -92,60 +89,30 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
 
 <!-- Gallery -->
-
-<h2>Sports en image</h2>
-
-<img src="assets/images/swiper1.jpg" alt="" />
-<img src="assets/images/swiper2.jpg" alt="" />
-<img src="assets/images/swiper3.jpg" alt="" />
-
-<!-- Footer -->
-
-<a href="#">
-    <svg class="icon">
-        <use xlink:href="#icon-logo"></use>
-    </svg>
-    tim canada
-</a>
-<nav>
-    <ul>
-        <li>
-            <a href="#">
-                <svg class="icon">
-                    <use xlink:href="#icon-instagram"></use>
-                </svg>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <svg class="icon">
-                    <use xlink:href="#icon-dribble"></use>
-                </svg>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <svg class="icon">
-                    <use xlink:href="#icon-twitter"></use>
-                </svg>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <svg class="icon">
-                    <use xlink:href="#icon-youtube"></use>
-                </svg>
-            </a>
-        </li>
-    </ul>
-</nav>
-
-<p class="copyright">Tous droits réservés © 2025 tim canada.</p>
+<section class="gallery">
+    <div class="wrapper">
+        <h2>Sports en image</h2>
+        <div class="swiper" data-component="Carousel">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="assets/images/swiper1.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/swiper2.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/swiper3.jpg" alt="" />
+                </div>
+            </div>
+            <!-- N'oubliez pas votre pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
 
 {% include '_partials/_footer.html' %}

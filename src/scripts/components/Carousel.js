@@ -5,8 +5,9 @@ export default class Carousel {
     this.element = element;
 
     this.options = {
-      slidesPerView: 2.5,
-      spaceBetween: 40,
+      slidesPerView: 1,
+      spaceBetween: 0,
+      direction: 'vertical',
       pagination: {
         el: this.element.querySelector('.swiper-pagination'),
       },
@@ -22,35 +23,7 @@ export default class Carousel {
   setOptions() {
     if ('split' in this.element.dataset) {
       this.options.breakpoints = {
-        930: {
-          slidesPerView: 2.5,
-          spaceBetween: 40,
-        },
-
-        620: {
-          slidesPerView: 1.5,
-          spaceBetween: 40,
-        },
-
-        350: {
-          slidesPerView: 1,
-          spaceBetween: 40,
-        },
-      };
-    }
-
-    if ('split2' in this.element.dataset) {
-      this.options.breakpoints = {
-        930: {
-          slidesPerView: 1,
-          spaceBetween: 0,
-        },
-        620: {
-          slidesPerView: 1,
-          spaceBetween: 0,
-        },
-
-        200: {
+        768: {
           slidesPerView: 1,
           spaceBetween: 0,
         },
@@ -71,7 +44,7 @@ export default class Carousel {
 
     if ('slides' in this.element.dataset) {
       this.options.slidesPerView =
-        parseFloat(this.element.dataset.slides, 1.2) ||
+        parseFloat(this.element.dataset.slides, 10) ||
         this.options.slidesPerView;
     }
   }
