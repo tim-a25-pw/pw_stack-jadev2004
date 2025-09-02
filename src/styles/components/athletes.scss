@@ -31,12 +31,75 @@
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     margin-top: 50px;
+    gap: 30px;
 
-    .card__sport__media img {
-    height: 100%;
-    width: 100%;
-    display: block;
-    border-radius: 20px;
-    object-fit: cover;
-}
+    .card__sport {
+    position: relative;
+    overflow: hidden;
+
+        .card__sport__media img {
+                position: relative;
+                height: 100%;
+                width: 100%;
+                display: block;
+                object-fit: cover;
+            }
+
+        
+            .card__sport__content {
+
+                display: none;
+            }  
+
+
+        &:hover{
+
+        .card__sport__content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            color: var(--color-white);
+            
+            
+
+            h3{
+                margin: 0;
+                font-weight: 600;
+                text-transform:none;
+            }
+
+            .nom__sport{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 0 20px 20px 20px;
+
+                .icon__sport{
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+        }
+
+            .gradient{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(
+            to bottom, 
+            rgba(0, 0, 0, 0.3),  
+            rgba(0, 0, 0, 0.7)  
+            );
+
+        }
+        }
+    }
 }
