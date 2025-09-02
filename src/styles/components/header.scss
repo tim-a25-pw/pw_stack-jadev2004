@@ -1,0 +1,75 @@
+/* ==========================================================================
+                                    header
+   ========================================================================== */
+
+.header {
+    background-color: var(--color-bg-primary);
+    padding: 20px 0;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/* ==========================================================================
+    / Logo
+   ========================================================================== */
+.logo__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-family: var(--font-primary);
+    color: var(--color-logo);
+    font-weight: bold;
+    margin: 0;
+
+    a{
+        font-size: 40px;  
+
+        .icon{
+
+            fill: var(--a-color-primary);
+        }
+        
+        &:hover{
+            text-decoration: none;
+        } 
+    }
+    
+}
+
+/* ==========================================================================
+    / navigation
+   ========================================================================== */
+
+.navigation {
+    ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 50px;
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            line-height: 0;
+        }
+    }
+
+    .nav--items {
+        margin: 0;
+        font-family: var(--font-primary);
+        font-size: var(--font-size-p);
+        color: var(--a-color-black);
+        font-weight: 600;
+        line-height: 100%;
+        
+        &:hover {
+          
+            text-decoration: none;
+        }
+    }
+
+}

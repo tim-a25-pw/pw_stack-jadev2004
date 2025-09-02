@@ -1,0 +1,42 @@
+/* ==========================================================================
+    / athletes content
+   ========================================================================== */
+
+   .athletes_content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 125px;
+
+        h2{
+            font-family: var(--font-primary);
+            font-weight: 600;
+            margin: 0 0 50px 0;
+        }
+
+        p{
+            width: 60%;
+            text-align: right;
+            margin: 0;
+            font-size: var(--font-size-p);
+        }
+   }
+
+/* ==========================================================================
+ / athletes cards
+ ========================================================================== */
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    margin-top: 50px;
+
+    .card__sport__media img {
+    height: 100%;
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+    object-fit: cover;
+}
+}
