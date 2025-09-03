@@ -8,7 +8,7 @@
             <img src="assets/images/bg-hero.jpg" alt="Skieur étoile" />
         </div>
 
-        <div class="hero__content">
+        <div class="hero__content" data-scrolly="fromRight">
             <h1>
                 La
                 <span class="texte__bold">crème</span>
@@ -30,7 +30,7 @@
 
 <section class="athletes">
     <div class="wrapper">
-        <div class="athletes_content">
+        <div class="athletes_content" data-scrolly="fromLeft">
             <h2>Nos athlètes</h2>
             <p>
                 Nos athlètes sont sélectionnés parmi les meilleurs de leur génération. Sans aucun ajout d’hormones de croissances (à l’exception des Doritos),
@@ -38,7 +38,7 @@
             </p>
         </div>
 
-        <div class="cards">
+        <div class="cards" data-scrolly="scaleUp">
             <div class="card__sport">
                 <div class="card__sport__media">
                     <img src="assets/images/matt-pratt.jpg" alt="" />
@@ -96,8 +96,11 @@
 <!-- Gallery -->
 <section class="gallery">
     <div class="wrapper">
-        <h2>Sports en image</h2>
-        <div class="swiper" data-component="Carousel">
+        <div class="gallery__content" data-scrolly="fromLeft">
+            <h2>Sports en image</h2>
+        </div>
+
+        <div class="swiper" data-component="Carousel" data-scrolly="scaleUp">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <img src="assets/images/swiper1.jpg" alt="" />

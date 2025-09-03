@@ -27,6 +27,29 @@
     }
 }
 
+.logo__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-family: var(--font-primary);
+    color: var(--color-logo);
+    font-weight: bold;
+    margin: 0;
+
+    a {
+        font-size: typo(30px, 40px);
+
+        .icon {
+            fill: var(--a-color-primary);
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
 .navigation__footer {
     ul {
         display: flex;

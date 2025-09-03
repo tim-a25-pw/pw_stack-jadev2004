@@ -6,11 +6,10 @@
     --font-primary: 'Nunito', sans-serif;
     --font-secondary: 'PT Sans', sans-serif;
 
-
     /// Grosseur des textes
-    --font-size-h1: #{typo(70px, 100px)};
+    --font-size-h1: #{typo(50px, 100px)};
     --font-size-h2: #{typo(30px, 50px)};
     --font-size-h3: #{typo(15px, 35px)};
-    --font-size-bouton: #{typo(16px)};
+    --font-size-bouton: #{typo(14px, 16px)};
     --font-size-p: #{typo(14px, 18px)};
 }

@@ -1,0 +1,83 @@
+/* ==========================================================================
+   scrolly / component
+   ========================================================================== */
+
+.has-js {
+    [data-scrolly='fromBottom'] {
+        //déclaration pour cacher l'élément
+        opacity: 0;
+        transform: translateY(60px);
+        transition: all 0.4s ease-out;
+
+        &.is-active {
+            //on change ce qu'il faut pour l'afficher
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    [data-scrolly='fromLeft'] {
+        //déclaration pour cacher l'élément
+        opacity: 0;
+        transform: translateX(-60px);
+        transition: all 0.4s ease-out;
+
+        &.is-active {
+            //on change ce qu'il faut pour l'afficher
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    [data-scrolly='fromTop'] {
+        //déclaration pour cacher l'élément
+        opacity: 0;
+        transform: translateY(-60px);
+        transition: all 0.4s ease-out;
+
+        &.is-active {
+            //on change ce qu'il faut pour l'afficher
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    [data-scrolly='fromRight'] {
+        //déclaration pour cacher l'élément
+        opacity: 0;
+        transform: translateX(60px);
+        transition: all 0.4s ease-out;
+
+        &.is-active {
+            //on change ce qu'il faut pour l'afficher
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    [data-scrolly='scaleUp'] {
+        //déclaration pour cacher l'élément
+        opacity: 0;
+        transform: scale(0.5);
+        transition: all 0.8s ease-out;
+
+        &.is-active {
+            //on change ce qu'il faut pour l'afficher
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    [data-scrolly='rotateUp'] {
+        //déclaration pour cacher l'élément
+        opacity: 0;
+        transform: translate(40px, 30px) rotate(20deg);
+        transition: all 0.8s ease-out;
+
+        &.is-active {
+            //on change ce qu'il faut pour l'afficher
+            opacity: 1;
+            transform: translate(0px, 0px) rotate(0deg);
+        }
+    }
+}

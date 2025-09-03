@@ -2,7 +2,7 @@
     / Hero
    ========================================================================== */
 
-   .hero {
+.hero {
     position: relative;
 }
 .hero__media {
@@ -29,26 +29,31 @@
     text-align: left;
     flex-direction: column;
 
-    p{
+    p {
         color: var(--color-white);
         width: 40%;
         margin: 30px 0 60px;
         font-size: var(--font-size-p);
+
+        @media screen and (min-width: $breakpoint-xs) {
+            width: 100%;
+        }
+
+        @media screen and (min-width: $breakpoint-sm) {
+            width: 60%;
+        }
     }
 
-    h1{
-         color: var(--a-color-primary);
+    h1 {
+        color: var(--a-color-primary);
         margin: 0;
         font-weight: 100;
 
-        .texte__bold{
+        .texte__bold {
             font-weight: 600;
         }
     }
 }
-
-
-
 
 .hero__content a {
     font-size: var(--font-size-bouton);
